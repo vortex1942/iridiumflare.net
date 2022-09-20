@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<?xml-stylesheet href="squad.xsl" type="text/xsl"?>
+<squad nick="IRIDIUM">
+	<name>Iridium Flare</name>
+	<email>admin@iridiumflare.net</email>
+	<web>www.iridiumflare.net</web>
+	<picture>flare.png</picture>
+	<title>Iridium Flare</title>
+	<member id="76561198155629414" nick="Goose">
+		<name>Goose</name>
+		<email>admin@iridiumflare.net</email>
+		<icq>Vortex#1949</icq>
+		<remark>Goose Airline's now with only a 78% Fatality Rate</remark>
+	</member>
+</squad>
