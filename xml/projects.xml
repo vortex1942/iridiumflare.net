@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE projects [
+<!ELEMENT projects (project*)>
+<!ELEMENT project (name, description, image, url, taglist)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+
+<!ELEMENT categories (tag*)>
+<!ELEMENT tag EMPTY>
+<!ATTLIST tag category (Horology|Networking|Programming|Design) "Horology">
+]>
+
+<!-- 
+    <project>
+        <title>Projtect title</title>
+        <description>Project description</description>
+        <image>Thumbnial url</image>
+        <url>Project page</url>
+        <categories> 
+            RELATED TAGS for filtering
+            <tag category="Programming"/>
+            <tag category="Design" />
+        </categories>
+    </project>
+-->
+<projects>
+    <project>
+        <title>Iridiumflare.net</title>
+        <description>This Website!</description>
+        <image>project1.jpg</image>
+        <url>../pages/projects/project1.html</url>
+        <categories>
+            <tag category="Programming"/>
+            <tag category="Design" />
+        </categories>
+    </project>
+</projects>
