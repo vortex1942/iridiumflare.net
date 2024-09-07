@@ -2,7 +2,8 @@
 
 <!DOCTYPE projects [
 <!ELEMENT projects (project*)>
-<!ELEMENT project (name, description, image, url, taglist)>
+<!ELEMENT project (name, description, image, url, categories)>
+<!ATTLIST project status (Ongoing|Finished) "Ongoing">
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT image (#PCDATA)>
@@ -27,14 +28,66 @@
     </project>
 -->
 <projects>
-    <project>
+    <project status="Ongoing">
         <title>Iridiumflare.net</title>
-        <description>This Website!</description>
-        <image>project1.jpg</image>
+        <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
+        <image>https://via.placeholder.com/150</image>
         <url>../pages/projects/project1.html</url>
         <categories>
             <tag category="Programming"/>
             <tag category="Design" />
         </categories>
     </project>
+
+    <project status = "Finished">
+        <title>Rose Engine Lathe</title>
+        <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
+        <image>https://via.placeholder.com/150</image>
+        <url>../pages/projects/project2.html</url>
+        <categories>
+            <tag category="Programming"/>
+            <tag category="Design" />
+        </categories>
+    </project>
+
+    <project status = "Ongoing">
+        <title>TailySail</title>
+        <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
+        <image>https://via.placeholder.com/150</image>
+        <url>../pages/projects/tailysail.html</url>
+        <categories>
+            <tag category="Programming"/>
+        </categories>
+    </project>
+
+    <project status = "Finished">
+        <title>Port Scanner</title>
+        <description>Automated port scanner script using task scheduler with reporting to event viewer </description>
+        <image>https://via.placeholder.com/150</image>
+        <url>../pages/projects/tailysail.html</url>
+        <categories>
+            <tag category="Programming"/>
+        </categories>
+    </project>
+    
+    <project status = "Finished">
+        <title>Subnetting Tutorial</title>
+        <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
+        <image>https://assets.gcore.pro/blog/what-is-a-subnet-how-subnetting-works/what-is-a-subnet-how-subnetting-works-2.png</image>
+        <url>../pages/projects/subnetting.html</url>
+        <categories>
+            <tag category="Networking"/>
+        </categories>
+    </project>
+
+    <project status = "Finished">
+        <title>Subnetting Tutorial</title>
+        <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
+        <image>https://via.placeholder.com/150</image>
+        <url>../pages/projects/subnetting.html</url>
+        <categories>
+            <tag category="Networking"/>
+        </categories>
+    </project>
+
 </projects>
