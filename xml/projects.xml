@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE projects [
+<!ENTITY nbsp "&#160;">
 <!ELEMENT projects (project*)>
 <!ELEMENT project (name, description, image, url, categories)>
 <!ATTLIST project status (Ongoing|Finished) "Ongoing">
@@ -30,7 +31,7 @@
 <projects>
     <project status="Ongoing">
         <title>Iridiumflare.net</title>
-        <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
+        <description>My personal project/portfolio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</description>
         <image>https://via.placeholder.com/150</image>
         <url>../pages/projects/project1.html</url>
         <categories>
@@ -52,7 +53,7 @@
     <project status = "Ongoing">
         <title>TailySail</title>
         <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
-        <image>https://via.placeholder.com/150</image>
+        <image>../images/tailysail3.jpg</image>
         <url>../pages/projects/tailysail.html</url>
         <categories>
             <tag category="Programming"/>
