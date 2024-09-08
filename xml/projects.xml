@@ -73,7 +73,7 @@
     <project status = "Finished">
         <title>Subnetting Tutorial</title>
         <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
-        <image>https://assets.gcore.pro/blog/what-is-a-subnet-how-subnetting-works/what-is-a-subnet-how-subnetting-works-2.png</image>
+        <image>../images/roseenginelathe1.jpg</image>
         <url>../pages/projects/subnetting.html</url>
         <categories>
             <tag category="Networking"/>
