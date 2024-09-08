@@ -41,9 +41,9 @@ function processResponse(xmlTree) {
         var processed_status = "";
         if (status == "Ongoing") {
             processed_status = "<p class='status-bar pastel-orange'>" + status + "</p>";
-    } else if (status == "Finished") {
-        processed_status = "<p class='status-bar pastel-green'>" + status + "</p>";
-    };
+        } else if (status == "Finished") {
+            processed_status = "<p class='status-bar pastel-green'>" + status + "</p>";
+        };
 
 
         let card = `

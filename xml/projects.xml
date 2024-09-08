@@ -11,7 +11,7 @@
 
 <!ELEMENT categories (tag*)>
 <!ELEMENT tag EMPTY>
-<!ATTLIST tag category (Horology|Networking|Programming|Design) "Horology">
+<!ATTLIST tag category (Horology|Networking|Programming|Design|Misc) "Horology">
 ]>
 
 <!-- 
@@ -34,18 +34,17 @@
         <image>https://via.placeholder.com/150</image>
         <url>../pages/projects/project1.html</url>
         <categories>
-            <tag category="Programming"/>
             <tag category="Design" />
         </categories>
     </project>
 
-    <project status = "Finished">
+    <project status = "Ongoing">
         <title>Rose Engine Lathe</title>
-        <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
-        <image>https://via.placeholder.com/150</image>
-        <url>../pages/projects/project2.html</url>
+        <description>Recreation of a vintage watchmaking tool using modern materials &amp; design techniques</description>
+        <image>../images/roseenginelathe1.jpg</image>
+        <url>../pages/projects/roseenginelathe.html</url>
         <categories>
-            <tag category="Programming"/>
+            <tag category="Horology"/>
             <tag category="Design" />
         </categories>
     </project>
@@ -67,6 +66,7 @@
         <url>../pages/projects/tailysail.html</url>
         <categories>
             <tag category="Programming"/>
+            <tag category="Networking"/>
         </categories>
     </project>
     
@@ -81,12 +81,22 @@
     </project>
 
     <project status = "Finished">
-        <title>Subnetting Tutorial</title>
-        <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
+        <title>MG14.com</title>
+        <description>Design &amp; Deployment of the current website for the MG14 Sailing Association website</description>
         <image>https://via.placeholder.com/150</image>
         <url>../pages/projects/subnetting.html</url>
         <categories>
-            <tag category="Networking"/>
+            <tag category="Design"/>
+        </categories>
+    </project>
+
+    <project status = "Finished">
+        <title>Dactyl CC Keyboard</title>
+        <description>Custom built ergonomic keyboard with split design and thumb clusters</description>
+        <image>https://via.placeholder.com/150</image>
+        <url>../pages/projects/dactyl.html</url>
+        <categories>
+            <tag category="Misc"/>
         </categories>
     </project>
 
