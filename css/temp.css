@@ -125,6 +125,14 @@ body {
     background-color: #800080;
   }
 
+  .gray {
+    background-color: #808080;
+  }
+
+  .blue {
+    background-color: #0000FF;
+  }
+
   .pastel-red {
     background-color: #FFC0CB;
   }

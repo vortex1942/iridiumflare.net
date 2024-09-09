@@ -34,6 +34,8 @@ function processResponse(xmlTree) {
             "Programming": "green",
             "Networking": "orange",
             "Design": "purple",
+            "Misc": "gray",
+            "Security": "blue"
           }
           processed_categories += `<p class='category ${colors[category]}'>${category}</p>`;
         }
