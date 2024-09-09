@@ -2,7 +2,7 @@
 <!DOCTYPE squad SYSTEM "squad.dtd">
 <?xml-stylesheet href="squad.xsl" type="text/xsl"?>
 <squad nick="HONK">
-	<picture>images/logo_7.paa</picture>
+	<picture>www.iridiumflare.net/images/logo_7.paa</picture>
 	<member id="76561198155629414" nick="Goose">
 		<name>Goose</name>
 		<icq>Vortex#1949</icq>
