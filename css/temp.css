@@ -143,6 +143,8 @@ body {
     margin: 0%;
     text-align: center;
     font-weight: bold;
+    height: 35px;
+    border-top: #333 1px solid;
   }
 
 figure {

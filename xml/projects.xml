@@ -12,7 +12,7 @@
 
 <!ELEMENT categories (tag*)>
 <!ELEMENT tag EMPTY>
-<!ATTLIST tag category (Horology|Networking|Programming|Design|Misc) "Horology">
+<!ATTLIST tag category (Horology|Networking|Programming|Design|Misc|Security) "Horology">
 ]>
 
 <!-- 
@@ -68,6 +68,7 @@
         <categories>
             <tag category="Programming"/>
             <tag category="Networking"/>
+            <tag category="Security"/>
         </categories>
     </project>
     
@@ -85,7 +86,7 @@
         <title>MG14.com</title>
         <description>Design &amp; Deployment of the current website for the MG14 Sailing Association website</description>
         <image>../images/mg14-1.jpg</image>
-        <url>../pages/projects/subnetting.html</url>
+        <url>../pages/projects/mg14.html</url>
         <categories>
             <tag category="Design"/>
         </categories>
