@@ -63,7 +63,7 @@
     <project status = "Finished">
         <title>Port Scanner</title>
         <description>Automated port scanner script using task scheduler with reporting to event viewer </description>
-        <image>../images/portscan1.png</image>
+        <image>../images/portscan1.jpg</image>
         <url>../pages/projects/portscan.html</url>
         <categories>
             <tag category="Programming"/>
