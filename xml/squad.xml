@@ -2,9 +2,14 @@
 <!DOCTYPE squad SYSTEM "squad.dtd">
 <?xml-stylesheet href="squad.xsl" type="text/xsl"?>
 <squad nick="HONK">
+	<name>Goose Airlines</name>
+	<email> </email>
+	<web> </web>
 	<picture>www.iridiumflare.net/images/logo_7.paa</picture>
+	<title>Goose Airlines</title>
 	<member id="76561198155629414" nick="Goose">
 		<name>Goose</name>
+		<email></email>
 		<icq>Vortex#1949</icq>
 		<remark>Goose Airline's now with only a 86% Fatality Rate</remark>
 	</member>
