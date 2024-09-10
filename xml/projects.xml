@@ -102,4 +102,14 @@
         </categories>
     </project>
 
+    <project status = "Finished">
+        <title>Quiver Dampeners</title>
+        <description>Specially Designed Dampeners to stop arrows from rattling in a quiver tube.</description>
+        <image>../images/quiver-1.jpg</image>
+        <url>../pages/projects/quiver.html</url>
+        <categories>
+            <tag category="Misc"/>
+        </categories>
+    </project>
+
 </projects>
