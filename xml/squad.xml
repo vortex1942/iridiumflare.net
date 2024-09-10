@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE squad SYSTEM "/xml/squad.dtd">
+<!DOCTYPE squad SYSTEM "squad.dtd">
 <?xml-stylesheet href="squad.xsl" type="text/xsl"?>
 <squad nick="HONK">
 	<name>Goose Airlines</name>
