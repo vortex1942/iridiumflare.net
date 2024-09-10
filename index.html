@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iridium Flare Entertainment </title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/temp.css">
     <link rel="shortcut icon" href="https://iridiumflare.net/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
 </head>
   <body>
-	<img src="images/logo_1.gif" alt="Logo Image" style="width: 15%; margin-top: 10%;">
-
-    <div>
-      <a href="pages/projects.html">
-        <button class="btn">Projects</button>
-      </a>
+    
+    <div class="header" style="border-radius: 0px;">
+      <img class="center" src="images/logo_2.png" alt="Logo Image" style="display: block;width: 5%;">
     </div>
+    
+    <div class="center container" style="border: none;">
+      
+      <a class="btn center" href="pages/projects.html">Projects</a>
 
-    <div>
+      <div class="container center" style="padding: 0px; width: 50%">
+        
+        <div class="header center" style="font-weight: bold; margin-bottom: 0.5rem;">
+          Contact me
+        </div>
+        
         <form action="https://formspree.io/f/mnqezjra" method="POST">
-          <label for="fname">Contact Email</label>
+          <label for="fname">Email:</label>
           <input type="email" id="fname" name="email" placeholder="" required>
       
-          <label for="lname">Message</label>
+          <label for="lname">Message:</label>
           <textarea id="lname" name="message" placeholder="Write your message here.." required></textarea>
               
-          <input class="btn" type="submit" value="Submit">
+          <input class="center btn" style="width: 100%" type="submit" value="Submit">
+  
         </form>
       </div>
+
+    </div>
+
 
   </body>
 </html>
