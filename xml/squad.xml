@@ -2,9 +2,9 @@
 <!DOCTYPE squad SYSTEM "squad.dtd">
 <squad nick="HONK">
 	<name>Goose Airlines</name>
-	<email> </email>
-	<web> </web>
-	<picture>../images/logo_7.paa</picture>
+	<email></email>
+	<web></web>
+	<picture>logo_7.paa</picture>
 	<title>Goose Airlines</title>
 	<member id="76561198155629414" nick="Goose">
 		<name>Goose</name>
