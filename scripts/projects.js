@@ -43,9 +43,9 @@ function processResponse(xmlTree) {
 
         var processed_status = "";
         if (status == "Ongoing") {
-            processed_status = "<p class='status-bar pastel-orange'>" + status + "</p>";
+            processed_status = "<div class='status-bar pastel-orange'>" + status + "</div>";
         } else if (status == "Finished") {
-            processed_status = "<p class='status-bar pastel-green'>" + status + "</p>";
+            processed_status = "<div class='status-bar pastel-green'>" + status + "</div>";
         };
 
         let header = `
@@ -57,8 +57,8 @@ function processResponse(xmlTree) {
         if (pinned == "true") {
           header = `
           <header>
-          <i class="pin fa-solid fa-thumbtack"></i>    
-          <h2>${title}</h2>
+            <i class="pin fa-solid fa-thumbtack"></i>    
+            <h2>${title}</h2>
           </header>
         `
         };
@@ -72,7 +72,7 @@ function processResponse(xmlTree) {
             ${processed_status}
 
             <div class="content">
-                <p>${description}</p>
+                <p class="p-content">${description}</p>
             </div>
 
             <div class="content">
