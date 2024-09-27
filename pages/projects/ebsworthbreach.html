@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MG14 Site</title>
+    <link rel="shortcut icon" href="https://iridiumflare.net/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/temp.css">
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ce5ce06592c14940b6af18e3b7a09c5f"}'></script><!-- End Cloudflare Web Analytics -->
+  </head>
+
+  <body>
+    
+    <div class="header" style="border-radius: 0px;">
+
+      <h1>MG14 Site</h1>
+    </div>
+
+    <div class="" style="width:75%; margin: 20px auto auto auto;">
+        <article class="card card-250" style="display: block; margin-top:2rem; margin-bottom: 1rem">
+            <header class="header" style="background-color: crimson;">
+                <h2 style="text-align: center;">Disclaimer</h2>
+            </header>
+            <div class="content" style="padding: 2rem">
+                <p>
+                    This report is based on my views as a Cybersecurity Student, and my professional views may differ. The report was written as the situation was still unfolding in January 2024, and as such the contents may not reflect the current situation and rely on speculation.
+                </p>
+            </div>
+        </article>
+
+        <a class="btn center" style="display: block;" href="../../images/EbsworthBreachReport.pdf" target="_blank">PDF Version</a>
+
+    <article class="card card-250" style="display: block">
+        <header class="header">
+            <h2 style="text-align: center;">Report Body</h2>
+        </header>
+        <div class="content" style="padding: 2rem;">
+            <p>
+                This report will focus on the HWL Ebsworth (HWLE) data breach in April 2023, the victim HWLE is one
+                of the largest legal partnerships in Australia which provides services to many government entities
+                (<a href="#4">Bernardone 2024</a>). As this situation is still unfolding the timeline listed below is only accurate to the
+                release of this report.
+            </p>
+            <ul>
+                <li>28th of April 2023 – HWLE discovers attack, after the threat actor (APLHV) makes an online
+                post claiming to of exfiltrated data (<a href="#10">HWL Ebsworth c. 2023</a>).</li>
+                <li>1st of May 2023 – HWLE reports a cyber incident involving ransomware and data exfiltration
+                (<a href="#7">Department of Customer Service 2023</a>).</li>
+                <li>8th of May 2023 – HWLE provided the initial report to the OAIC due to passing the threshold
+                for a notifiable data breach (<a href="#7">Department of Customer Service 2023</a>).</li>
+                <li>9th of June 2023 – HWLE became aware the threat actor published 1.4TB of data
+                (<a href="#7">Department of Customer Service 2023</a>).</li>
+                <li>15th of June 2023 – HWLE files an injunction to prevent the ALPHV and any third parties from
+                releasing any information (<a href="#9">Hendy 2023</a>).</li>
+                <li>23rd of June 2023 – AIRMSHL Goldie is appointed as Australia’s first National Cyber Security
+                Coordinator (NCSC) in response to the breach (<a href="#5">Borys & Al-Nashar 2023</a>).</li>
+                <li>18th of September 2023 – The NCSC publicly states 65 government agencies were impacted
+                by the breach (<a href="#8">Department of Home Affairs 2023</a>, p. 2)</li>
+                <li>20th of December 2023 – The Federal Bureau of Investigation releases a decryption tool in
+                partnership with the Australian Federal Police (<a href=#2>Australian Federal Police 2023</a>).</li>
+                <li>15th of January 2024 – The Department of Home Affairs releases a list from October detailing
+                62 affected government departments and entities and the information breached (<a href="#4">Bernardone 2024</a>; <a href="#8">Department of Home Affairs 2023</a>).</li>
+            </ul>
+
+            <p> 
+                Unfortunately, the exact vulnerability that was exploited has not been publicly disclosed, however, it
+                was reported that the attackers achieved network access to a file server via an email an employee
+                had received on their personal device (<a href="#6">Buckingham-Jones & Pelly 2023</a>; <a href="#11">Mason & Pelly 2023</a>). While
+                the source of the information cannot be directly confirmed, a 2022 Ransomware profile on ALPHV
+                notes that their primary access vector is through utilizing valid login credentials, either brute forced
+                or gained in phishing attacks to access commercial RDP and VPN products (Australian Cyber Security
+                Centre 2022, pp. 2-3). With this information, it can be inferred that the attack was potentially caused
+                by a phishing email sent to an employee’s personal email, which then provided the attacker with
+                valid credentials to gain network access via a VPN on the employee’s device. After this point there is
+                less pertinent evidence on this specific attack, meaning the following is more speculative based on a
+                <a href="#13">Microsoft Threat Intelligence (2022)</a> report which identifies the ALPHZ ransomware as being capable
+                of a user authenticated privilege escalation via a UAC bypass, followed by encryption and data
+                exfiltration notably the exfiltration process can take several days.
+            </p>
+            <p>
+                However we can utilize the profile developed by the (<a href="#1">ACSC 2022</a>) to understand who ALPHV are, and
+                what their next actions may have been. To begin with ALPHV is also known as BlackCat and are
+                Russian-speaking group that provides a ransomware-as-a-service affiliate program. Of which is a
+                business model that allows people to pay to use the ransomware with a monthly fee model and a percentage of profits from the attack (<a href="#3">Baker 2023</a>). ALPHV are believed to be tied to the groups
+                responsible for the 2021 Colonial Pipeline ransomware attack (<a href="#1">ACSC 2022</a>, p. 1). And the primary
+                initial access methods employed by the users of this software are exploiting known vulnerabilities,
+                common security misconfigurations, and stolen credentials (<a href="#1">ACSC 2022</a>, p. 2).
+            </p>
+            <p>
+                This information is quite useful as it shows that ALPHV primarily uses known vulnerabilities and
+                common misconfigurations. Both of which can be effectively mitigated through auditing systems for
+                publicly known vulnerabilities and then correcting them. And then auditing configurations for issues
+                such as default accounts, services with unnecessarily exposed ports, and lack of security hardening
+                (<a href="#16">OWASP 2021</a>).
+            </p>
+            <p>
+                The difficult issue to address with the exploitation of valid accounts is the human element.
+                <a href="#12">Menachem et al. (2023)</a> suggests multiple mitigation methods, however the easiest to apply in this
+                situation would be restricting the use of personal devices, ensuring suitable password policies are in
+                place with periodical changes, Account auditing based on their activity, and most importantly. User
+                Training, without sufficient training the attack will have a high chance of reoccurring.
+            </p>
+            <p>
+                Additionally to improve the defense in depth, changes should be made to Remote access services.
+                <a href="#15">Oliveira et al. (2023)</a> advises four primary methods to mitigate this the first is to disable remote
+                access services, limiting remote access to sensitive information, applying Multi-factor Authentication,
+                and network segmentation through internal firewalls and gateways so clients cannot access the full
+                network remotely.
+            </p>
+            <p>
+                The breach itself is reported to of affected a majority of HWLE’s clientele with approximately 4Tb of
+                documents being leaked which has included at least 62 different government departments and
+                agencies (<a href="#4">Bernardone 2024</a>; <a href="#8">DHA 2023</a>). Affected entities range from the Digital Health Agency
+                responsible for the My Health Record, through to the Department of Defence. An overview was
+                provided stating a range of PII, Medical, and National security information among many others were
+                exfiltrated (<a href="#8">DHA 2023</a>, p. 4).
+            </p>
+            <p>
+                A notable response by HWLE was to file a legal injunction to prevent ALPHV from illegally releasing
+                data that was illegally acquired the side effect of this however is that media companies and third
+                party breach detection services such as HaveIBeenPwned are unable to report directly on this
+                information (<a href="#9">Hendy 2023</a>). While this has helped to protect the reputation of HWLE it comes at a
+                cost to affected individuals who have been notified they were involved in a breach but not what
+                information had been breached (<a href="#14">Nadel J 2024</a>).
+            </p>
+            <p>
+                To conclude, this breach could have been mitigated through adequate security measures. The threat
+                actors were known for using already reported vulnerabilities. But most critically the information of
+                the breaches was suppressed, rightfully so with the security agencies. But at the detriment of the
+                individuals who have had sensitive information breached from health-related agencies but have not
+                been told what information was breached. And hopefully this situation is used as a future learning
+                experience on how to respond to large breaches.
+            </p>
+        </div>
+    </article>
+
+    <article class="card card-250" style="display: block; margin-top:2rem">
+        <header class="header">
+            <h2 style="text-align: center;">References</h2>
+        </header>
+        <div class="content">
+            <ul>
+                <li>ACSC – see Australian Cyber Security Centre</li>
+                <li>DHA – see Department of Home Affairs</li>
+                <li>DPSC – see Department of Customer Service</li>
+                <li>HWLE – see HWE Ebsworth</li>
+                <li>OWASP – see Open Worldwide Application Security Project</li>
+            </ul>
+
+            <div style="width: 90%; margin-left: auto; margin-right: auto;">
+                <p id="1"><dfn>Australian Cyber Security Centre 2022</dfn>, ACSC Ransomware Profile – ALPHV (aka BlackCat), Australian Signals Directorate, viewed 16 January 2024, &lt<a href="https://www.cyber.gov.au/sites/default/files/2023-02/ACSC%20Ransomware%20Profile%20Alphv%20%2814%20April%202022%29%20-%20PDF.pdf">External Site</a>&gt</p>
+                <p id="2"><dfn>Australian Federal Police 2023</dfn>, ‘Russian-led hacking group disrupted as Australian businesses regain
+                    access to critical data’, media release, 20 December, Australian Federal Police, viewed 16
+                    January 2024, &lt<a href="https://www.afp.gov.au/news-centre/media-release/russian-led-hacking-group-disrupted-australian-businesses-regain-access">External Site</a>&gt
+                </p>
+                <p id="3"><dfn>Baker, K 2023</dfn>, Ransomware as a Service (RaaS) Explained How It Works & Examples, Crowdstrike,
+                    viewed 16 January 2024, &lt<a href="https://www.crowdstrike.com/cybersecurity-101/ransomware/ransomware-as-a-service-raas/">External Site</a>&gt</p>
+                <p id="4"><dfn>Bernardone, L 2024</dfn>, ‘RBA, AFP, AusPost caught up in law firm hack’, InformationAge, 15 January,
+                    viewed 16 January 2024, &lt<a href="https://ia.acs.org.au/article/2024/rba--afp--auspost-caught-up-in-law-firm-hack.html">External Site</a>&gt</p>
+                <p id="5"><dfn>Borys, S & Al-Nashar, N 2023</dfn>, ‘Nation's first cyber security coordinator appointed, as government reckons with HWL Ebsworth breach’, Australian Broadcasting Commission, 23 June, viewed 17 January 2024, &lt<a href="https://www.abc.net.au/news/2023-06-23/cyber-security-coordinator-appointed-ebsworth-breach/102514454">External Site</a>&gt</p>
+                <p id="6"><dfn>Buckingham-Jones, J & Pelly, M 2023</dfn>, ‘Revealed: Inside HWL Ebsworth’s negotiations with the BlackCat hackers’, The Australian Financial Review, 15 June, viewed 16 January 2024, &lt<a href="https://www.afr.com/companies/media-and-marketing/revealed-inside-hwl-ebsworth-s-negotiations-with-the-blackcat-hackers-20230614-p5dgf7">External Site</a>&gt</p>
+                <p id="7"><dfn>Department of Customer Service 2023</dfn>, ‘Cyber incident affecting HWL Ebsworth’, media release, 21 June, Digital NSW, viewed 16 January 2024, &lt<a href="https://www.nsw.gov.au/departments-and-agencies/department-of-customer-service/media-releases/cyber-incident-affecting-hwl-ebsworth">External Site</a>&gt</p>
+                <p id="8"><dfn>Department of Home Affairs 2023</dfn>, OSE23-127 - HWL Ebsworth Cyber Breach - Government Entities Impacted, Department of Home Affairs, viewed 20 January 2024, &lt<a href="https://www.aph.gov.au/api/qon/downloadestimatesquestions/EstimatesQuestion-CommitteeId6-EstimatesRoundId22-PortfolioId20-QuestionNumber127">External Site</a>&gt</p>
+                <p id="9"><dfn>Hendy, N 2023</dfn>, ‘Aussie law firm slaps hackers with injunction’, InformationAge, 15 June, viewed 16 January 2024, &lt<a href="https://ia.acs.org.au/article/2023/aussie-law-firm-slaps-hackers-with-injunction-.html">External Site</a>&gt</p>
+                <p id="10"><dfn>HWL Ebsworth c. 2023</dfn>, Cyber Incident, HWL Ebsworth, viewed 16 January 2024, &lt<a href="https://hwlebsworth.com.au/cyber-incident/">External Site</a>&gt</p>
+                <p id="11"><dfn>Mason, M & Pelly, M 2023</dfn>, ‘Hackers turn up the heat on HWL Ebsworth’, The Australian Financial Review, 11 May, viewed 16 January 2024, &lt<a href="https://www.afr.com/companies/professional-services/hackers-turn-up-the-heat-on-hwl-ebsworth-20230510-p5d7da">External Site</a>&gt</p>
+                <p id="12"><dfn>Menachem, G, Sternstein, J, Wee, M, Somasamudram, P, Sarukkai, S, Farooqh, S & Weizman, Y 2023</dfn>, Valid Accounts, Technique T1078, MITRE ATT&CK, viewed 16 January 2024, &lt<a href="https://attack.mitre.org/techniques/T1078/">External Site</a>&gt</p>
+                <p id="13"><dfn>Microsoft Threat Intelligence 2022</dfn>, The many lives of BlackCat ransomware, Microsoft Security, viewed 16 January 2024, &lt<a href="https://www.microsoft.com/en-us/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/">External Site</a>&gt</p>
+                <p id="14"><dfn>Nadel J 2024</dfn>, ‘644 NDIS users not told which medical records leaked, seven months after HWL Ebsworth hack’, itnews, 19 January, viewed 20 January 2024, &lt<a href="https://www.itnews.com.au/news/644-ndis-users-not-told-which-medical-records-leaked-seven-months-after-hwl-ebsworth-hack-604150">External Site</a>&gt</p>
+                <p id="15"><dfn>Oliveira, A, Shuper, A, Geesaman, B, Oakley, D, Fiser, D, Tayouri, D, Frimark, I, Chen, J, Logan, M, McCune, R, Smith, T, Manral, V, Weizman, Y & Avrahami, Y 2023</dfn>, External Remote Services, Technique T1133, MITRE ATT&CK, viewed 17 Janauary 2024, &lt<a href="https://attack.mitre.org/techniques/T1133/">External Site</a>&gt</p>
+                <p id="16"><dfn>Open Worldwide Application Security Project 2021</dfn>, A05:2021 – Security Misconfiguration, Open Worldwide Application Security Project, viewed 16 January 2024, &lt<a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">External Site</a>&gt</p>            
+            </div>
+        </div>
+    </article>
+
+
+    </div>
+
+    
+
+
+  </body>
+</html>

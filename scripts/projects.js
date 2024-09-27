@@ -68,7 +68,7 @@ function processResponse(xmlTree) {
         <article class="card">
             ${header}
 
-            <img src="${image}" alt="Project image" />
+            <img src="${image}" alt=" " />
             ${processed_status}
 
             <div class="content">

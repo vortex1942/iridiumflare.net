@@ -75,9 +75,9 @@
     
     <project status = "Finished" pinned="true">
         <title>HWLE Data Breach</title>
-        <description>This was a report produced for an assignment, Covering the HWL Ebsworth data breach and their response</description>
+        <description>This is a report produced for an assignment, Covering the 2023 HWL Ebsworth data breach</description>
         <image>../images/</image>
-        <url>../pages/projects/ebsowrthbreach.html</url>
+        <url>../pages/projects/ebsworthbreach.html</url>
         <categories>
             <tag category="Security"/>
         </categories>
