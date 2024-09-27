@@ -194,6 +194,12 @@ figure {
     object-fit: scale-down;
 }
 
+.pin {
+  float:right;
+  margin: 0.5rem;
+  color: red
+}
+
 figcaption {
   background-color: #353535;
   color: #F4F3F2;

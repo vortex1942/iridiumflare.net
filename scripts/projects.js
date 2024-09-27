@@ -24,6 +24,7 @@ function processResponse(xmlTree) {
         const image = project.getElementsByTagName('image')[0].childNodes[0].nodeValue;
         const url = project.getElementsByTagName('url')[0].childNodes[0].nodeValue;
         const categories = project.getElementsByTagName('categories')[0].children;
+        const pinned = project.getAttribute("pinned");
 
         var processed_categories = "";
         for (let j = 0; j < categories.length; j++) {
@@ -47,12 +48,25 @@ function processResponse(xmlTree) {
             processed_status = "<p class='status-bar pastel-green'>" + status + "</p>";
         };
 
+        let header = `
+        <header>
+            <h2>${title}</h2>
+        </header>
+        `;
+
+        if (pinned == "true") {
+          header = `
+          <header>
+          <i class="pin fa-solid fa-thumbtack"></i>    
+          <h2>${title}</h2>
+          </header>
+        `
+        };
+
 
         let card = `
         <article class="card">
-            <header>
-                <h2>${title}</h2>
-            </header>
+            ${header}
 
             <img src="${image}" alt="Project image" />
             ${processed_status}
@@ -74,6 +88,10 @@ function processResponse(xmlTree) {
       `;
 
       // Insert the card into the DOM
+      if (pinned == "true") {
+        document.getElementById('projects').innerHTML = card + document.getElementById('projects').innerHTML;
+      } else {
       document.getElementById('projects').innerHTML += card;
+      }
     }
 }

@@ -5,6 +5,7 @@
 <!ELEMENT projects (project*)>
 <!ELEMENT project (name, description, image, url, categories)>
 <!ATTLIST project status (Ongoing|Finished) "Ongoing">
+<!ATTLIST project pinned (true|false) "false">
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT image (#PCDATA)>
@@ -29,6 +30,7 @@
     </project>
 -->
 <projects>
+    <!--
     <project status="Ongoing">
         <title>Iridiumflare.net</title>
         <description>My personal project/portfolio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</description>
@@ -38,7 +40,7 @@
             <tag category="Design" />
         </categories>
     </project>
-
+    !-->
     <project status = "Ongoing">
         <title>Rose Engine Lathe</title>
         <description>Recreation of a vintage watchmaking tool using modern materials &amp; design techniques</description>
@@ -59,8 +61,8 @@
             <tag category="Programming"/>
         </categories>
     </project>
-
-    <project status = "Finished">
+    
+    <project status = "Finished" pinned="true">
         <title>Port Scanner</title>
         <description>Automated port scanner script using task scheduler with reporting to event viewer </description>
         <image>../images/portscan1.jpg</image>
@@ -72,6 +74,17 @@
         </categories>
     </project>
     
+    <project status = "Finished" pinned="true">
+        <title>HWLE Data Breach</title>
+        <description>This was a report produced for an assignment, Covering the HWL Ebsworth data breach and their response</description>
+        <image>../images/</image>
+        <url>../pages/projects/ebsowrthbreach.html</url>
+        <categories>
+            <tag category="Security"/>
+        </categories>
+    </project>
+
+
     <project status = "Finished">
         <title>Subnetting Tutorial</title>
         <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
@@ -82,7 +95,7 @@
         </categories>
     </project>
 
-    <project status = "Finished">
+    <project status = "Finished" pinned="true">
         <title>MG14.com</title>
         <description>Design &amp; Deployment of the current website for the MG14 Sailing Association website</description>
         <image>../images/mg14-1.jpg</image>
