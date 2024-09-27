@@ -68,7 +68,6 @@
         <image>../images/portscan1.jpg</image>
         <url>../pages/projects/portscan.html</url>
         <categories>
-            <tag category="Programming"/>
             <tag category="Networking"/>
             <tag category="Security"/>
         </categories>
