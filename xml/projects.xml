@@ -6,6 +6,7 @@
 <!ELEMENT project (name, description, image, url, categories)>
 <!ATTLIST project status (Ongoing|Finished) "Ongoing">
 <!ATTLIST project pinned (true|false) "false">
+<!ATTLIST project priority (high|medium|low) "low">
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT image (#PCDATA)>
@@ -41,7 +42,7 @@
         </categories>
     </project>
     !-->
-    <project status = "Ongoing">
+    <project status = "Ongoing" priority="low">
         <title>Rose Engine Lathe</title>
         <description>Recreation of a vintage watchmaking tool using modern materials &amp; design techniques</description>
         <image>../images/roseenginelathe1.jpg</image>
@@ -52,7 +53,7 @@
         </categories>
     </project>
 
-    <project status = "Ongoing">
+    <project status = "Ongoing" priority="medium">
         <title>TallySail</title>
         <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
         <image>../images/tailysail3.jpg</image>
@@ -62,7 +63,7 @@
         </categories>
     </project>
     
-    <project status = "Finished" pinned="true">
+    <project status = "Finished" pinned="true" priority="high">
         <title>Port Scanner</title>
         <description>Automated port scanner script using task scheduler with reporting to event viewer </description>
         <image>../images/portscan1.jpg</image>
@@ -73,7 +74,7 @@
         </categories>
     </project>
     
-    <project status = "Finished" pinned="true">
+    <project status = "Finished" pinned="true" priority="high">
         <title>HWLE Data Breach</title>
         <description>This is a report produced for an assignment, Covering the 2023 HWL Ebsworth data breach</description>
         <image>../images/</image>
@@ -84,7 +85,7 @@
     </project>
 
 
-    <project status = "Finished">
+    <project status = "Finished" priority="medium">
         <title>Subnetting Tutorial</title>
         <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
         <image>../images/subnetting1.jpg</image>
@@ -94,7 +95,7 @@
         </categories>
     </project>
 
-    <project status = "Finished" pinned="true">
+    <project status = "Finished" pinned="true" priority="high">
         <title>MG14.com</title>
         <description>Design &amp; Deployment of the current website for the MG14 Sailing Association website</description>
         <image>../images/mg14-1.jpg</image>
@@ -104,7 +105,7 @@
         </categories>
     </project>
 
-    <project status = "Finished">
+    <project status = "Finished" priority="low">
         <title>Dactyl CC Keyboard</title>
         <description>Custom built ergonomic keyboard with split design and thumb clusters</description>
         <image>../images/dactyl-1.jpg</image>
@@ -114,7 +115,7 @@
         </categories>
     </project>
 
-    <project status = "Finished">
+    <project status = "Finished" priority="low">
         <title>Quiver Dampeners</title>
         <description>Specially Designed Dampeners to stop arrows from rattling in a quiver tube.</description>
         <image>../images/quiver-1.jpg</image>

@@ -15,6 +15,10 @@ function processResponse(xmlTree) {
     document.getElementById('projects').innerHTML = '';
     var projects = xmlTree.getElementsByTagName("project");
 
+    var highPriority = [];
+    var mediumPriority = [];
+    var lowPriority = [];
+
     for (let i = 0; i < projects.length; i++) {
         let project = projects[i];
         
@@ -25,6 +29,7 @@ function processResponse(xmlTree) {
         const url = project.getElementsByTagName('url')[0].childNodes[0].nodeValue;
         const categories = project.getElementsByTagName('categories')[0].children;
         const pinned = project.getAttribute("pinned");
+        const priority = project.getAttribute("priority");
 
         var processed_categories = "";
         for (let j = 0; j < categories.length; j++) {
@@ -87,11 +92,35 @@ function processResponse(xmlTree) {
         </article>
       `;
 
-      // Insert the card into the DOM
-      if (pinned == "true") {
-        document.getElementById('projects').innerHTML = card + document.getElementById('projects').innerHTML;
-      } else {
-      document.getElementById('projects').innerHTML += card;
+    
+      /*TODO: Convert this is a list of tuples (priority, content) sort the list based on the priority value*/
+      switch(priority) {
+        case "high":
+          if (pinned == "true") {
+            highPriority.unshift(card);
+            break
+          } else {
+          highPriority.push(card);
+          break;
+          }
+        case "medium":
+          if (pinned == "true") {
+            mediumPriority.unshift(card);
+            break
+          } else {
+          mediumPriority.push(card);
+          break;
+          }
+        case "low":
+          if (pinned == "true") {
+            lowPriority.unshift(card);
+            break
+          } else {
+          lowPriority.push(card);
+          break;
+          }   
+        }
       }
-    }
+    
+    document.getElementById('projects').innerHTML = highPriority.join('') + mediumPriority.join('') + lowPriority.join('');
 }
