@@ -73,7 +73,6 @@ body {
     height: 8rem;
   }
 
-
   .center {
     text-align: center;
     margin-top: auto;
@@ -250,4 +249,21 @@ label {
   display:block;
   text-align: left;
   margin-left: 1rem;
+}
+
+@keyframes backgroundFade {
+  0% {
+    background-color: transparent;
+  }
+  25% {
+    background-color: #3282F6; /* Adjust color as needed */
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+p:target {
+  border-radius: 10px;
+  animation: backgroundFade 2s ease-in-out;
 }
