@@ -1,0 +1,269 @@
+body {
+    background-color: #F4F3F2;
+    color: #353535;
+    font:
+      1.2em / 1.5 Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 1em auto;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    border: 1px solid #999;
+    border-radius: 10px;
+  }
+
+  .container {
+    width:75%;
+    min-width: 20rem;
+    max-width: 50rem;
+    border: 1px solid #999;
+    border-radius: 10px;
+    margin-top: 1rem !important;
+  }
+
+  .bg {
+    background-color: #353535;
+    color: #F4F3F2;
+  }
+
+  .card-250 {
+    grid-template-rows: max-content 250px 1fr;
+  }
+
+  .card-350 {
+    grid-template-rows: max-content 350px 1fr;
+  }
+
+  .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card h2 {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .card .content {
+    padding: 0.5rem;
+    overflow: auto;
+  }
+
+  .p-content {
+    margin: 0px;
+    margin-bottom: auto;
+    height: 8rem;
+  }
+
+  .center {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .card footer {
+    background-color: #353535;
+    color: #F4F3F2;
+    padding: 0.5rem;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+
+  .div-center {
+    border: 1px solid #999;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+  
+  .card footer:hover {
+    background-color: #3282F6;
+  }
+  
+  .btn {
+    display: block;
+    width: unset;
+    background-color: #2C2C2C;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+    transition:color 0.25s ease-in-out,background-color 0.25s ease-in-out,border-color 0.25s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .btn:hover {
+    background-color: #3282F6;
+    color: white;
+  }
+
+  .category {
+    display: inline-block;
+    background-color: #3282F6;
+    color: #F4F3F2;
+    padding: 0.2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.1rem;
+  }
+
+  .header {
+    background-color: #353535;
+    color: #F4F3F2;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .red {
+    background-color: #FF0000;
+  }
+
+  .green {
+    background-color: #00FF00;
+  } 
+
+  .orange {
+    background-color: #FFA500;
+  } 
+
+  .purple {
+    background-color: #800080;
+  }
+
+  .gray {
+    background-color: #808080;
+  }
+
+  .blue {
+    background-color: #0000FF;
+  }
+
+  .pastel-red {
+    background-color: #FFC0CB;
+  }
+
+  .pastel-green {
+    background-color: #98FB98;
+  }
+
+  .pastel-orange {
+    background-color: #FFD700;
+  }
+
+  .status-bar {
+    padding: 0.2rem;
+    color: #F4F3F2;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    height: 35px;
+    border-top: #353535 1px solid;
+  }
+
+figure {
+  display: inline-block;  
+  margin: 10px;
+  padding: 1%;
+  background-color: #353535;
+  border: #353535 solid 5px;
+  border-radius: 10px;
+}
+
+.proj-card-img {
+    border-radius: 10px;
+    max-height: 600px;
+    object-fit: scale-down;
+}
+
+.pin {
+  float:right;
+  margin: 0.5rem;
+  color: red
+}
+
+figcaption {
+  background-color: #353535;
+  color: #F4F3F2;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 5%;
+  padding-top: 10px;
+  width: 80%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+input[type=email], textarea, select {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #DFDCD9;
+}
+
+textarea {
+  max-width: 85%;
+}
+
+label {
+  display:block;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+@keyframes backgroundFade {
+  0% {
+    background-color: transparent;
+  }
+  25% {
+    background-color: #3282F6; /* Adjust color as needed */
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+p:target {
+  border-radius: 10px;
+  animation: backgroundFade 2s ease-in-out;
+}

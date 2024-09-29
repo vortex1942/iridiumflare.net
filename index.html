@@ -5,89 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iridium Flare Entertainment </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <style>
+    <link rel="stylesheet" href="css/temp.css">
+    <link rel="shortcut icon" href="https://iridiumflare.net/images/favicon.ico" type="image/x-icon">
+    <!-- Fontawesome Icons --><script src="https://kit.fontawesome.com/0750e10bb7.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MSCWX866Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        body {
-            color:#000000;
-            background-color:#202020;
-            overflow: hidden
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        label {
-            color: #FFFFFF;
-        }
-
-        div {
-        border-radius: 5px;
-        background-color: #2E2E2E;
-        padding: 20px;
-        width: 20%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }
-
-        div {
-            font-family: "Arial";
-            font-weight: 600;
-        }
-
-        input[type=email], textarea, select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            color: #FFFFFF;
-            background-color: #2E2E2E;
-        }
-
-        input:focus, textarea:focus {
-          border-color: #3282F6;
-        }
-
-        input[type=submit] {
-            width: 100%;
-            background-color: #919090;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #3282F6;
-        }
-    </style>
-
+      gtag('config', 'G-2MSCWX866Y');
+    </script>
 </head>
   <body>
-	<img src="logo_1.gif" alt="" style="width: 15%; margin-top: 10%;">
+    
+    <div class="header" style="border-radius: 0px;">
+      <img class="center" src="images/logo_2.png" alt="Logo Image" style="display: block;width: 5%;">
+    </div>
+    
+    <div class="center container" style="border: none;">
+      
+      <a class="btn center" href="pages/projects.html">
+        Projects
+      </a>
 
-    <div>
+      <a class="btn center" href="https://github.com/vortex1942">
+        Github <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a class="btn center" href="https://www.linkedin.com/in/lachlan-davis-532246329">
+        LinkedIn <i class="fa-brands fa-s fa-linkedin"></i>
+      </a>
+
+      <div class="container center" style="padding: 0px; width: 100%">
+        
+        <div class="header center" style="font-weight: bold; margin-bottom: 0.5rem;">
+          Contact me
+        </div>
+        
         <form action="https://formspree.io/f/mnqezjra" method="POST">
-          <label for="fname">Contact Email</label>
+          <label for="fname">Email:</label>
           <input type="email" id="fname" name="email" placeholder="" required>
       
-          <label for="lname">Message</label>
+          <label for="lname">Message:</label>
           <textarea id="lname" name="message" placeholder="Write your message here.." required></textarea>
               
-          <input type="submit" value="Submit">
+          <input class="center btn" style="width: 100%; margin-bottom: 0px;" type="submit" value="Submit">
+  
         </form>
       </div>
 
+    </div>
   </body>
 </html>

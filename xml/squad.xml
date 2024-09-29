@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<squad nick="HONK">
+	<name>Goose Airlines</name>
+	<email></email>
+	<web></web>
+	<picture>logo_7.paa</picture>
+	<title>Goose Airlines</title>
+	<member id="76561198155629414" nick="Goose">
+		<name>Goose</name>
+		<email></email>
+		<icq>Vortex#1949</icq>
+		<remark>Goose Airline's now with only a 86% Fatality Rate</remark>
+	</member>
+</squad>

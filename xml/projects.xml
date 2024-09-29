@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE projects [
+<!ENTITY nbsp "&#160;">
+<!ELEMENT projects (project*)>
+<!ELEMENT project (name, description, image, url, categories)>
+<!ATTLIST project status (Ongoing|Finished) "Ongoing">
+<!ATTLIST project pinned (true|false) "false">
+<!ATTLIST project priority (high|medium|low) "low">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+
+<!ELEMENT categories (tag*)>
+<!ELEMENT tag EMPTY>
+<!ATTLIST tag category (Horology|Networking|Programming|Design|Misc|Security) "Horology">
+]>
+
+<!-- 
+    <project>
+        <title>Projtect title</title>
+        <description>Project description</description>
+        <image>Thumbnial url</image>
+        <url>Project page</url>
+        <categories> 
+            RELATED TAGS for filtering
+            <tag category="Programming"/>
+            <tag category="Design" />
+        </categories>
+    </project>
+-->
+<projects>
+    <!--
+    <project status="Ongoing">
+        <title>Iridiumflare.net</title>
+        <description>My personal project/portfolio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</description>
+        <image>https://via.placeholder.com/150</image>
+        <url>../pages/projects/project1.html</url>
+        <categories>
+            <tag category="Design" />
+        </categories>
+    </project>
+    !-->
+    <project status = "Ongoing" priority="low">
+        <title>Rose Engine Lathe</title>
+        <description>Recreation of a vintage watchmaking tool using modern materials &amp; design techniques</description>
+        <image>../images/roseenginelathe1.jpg</image>
+        <url>../pages/projects/roseenginelathe.html</url>
+        <categories>
+            <tag category="Horology"/>
+            <tag category="Design" />
+        </categories>
+    </project>
+
+    <project status = "Ongoing" priority="medium">
+        <title>TallySail</title>
+        <description>Scoring system for sailing boats used for National &amp; State level competitions</description>
+        <image>../images/tailysail3.jpg</image>
+        <url>../pages/projects/tailysail.html</url>
+        <categories>
+            <tag category="Programming"/>
+        </categories>
+    </project>
+    
+    <project status = "Finished" pinned="true" priority="high">
+        <title>Port Scanner</title>
+        <description>Automated port scanner script using task scheduler with reporting to event viewer </description>
+        <image>../images/portscan1.jpg</image>
+        <url>../pages/projects/portscan.html</url>
+        <categories>
+            <tag category="Networking"/>
+            <tag category="Security"/>
+        </categories>
+    </project>
+    
+    <project status = "Finished" pinned="true" priority="high">
+        <title>HWLE Data Breach</title>
+        <description>This is a report produced for an assignment, Covering the 2023 HWL Ebsworth data breach</description>
+        <image>../images/</image>
+        <url>../pages/projects/ebsworthbreach.html</url>
+        <categories>
+            <tag category="Security"/>
+        </categories>
+    </project>
+
+
+    <project status = "Finished" priority="medium">
+        <title>Subnetting Tutorial</title>
+        <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
+        <image>../images/subnetting1.jpg</image>
+        <url>../pages/projects/subnetting.html</url>
+        <categories>
+            <tag category="Networking"/>
+        </categories>
+    </project>
+
+    <project status = "Finished" pinned="true" priority="high">
+        <title>MG14.com</title>
+        <description>Design &amp; Deployment of the current website for the MG14 Sailing Association website</description>
+        <image>../images/mg14-1.jpg</image>
+        <url>../pages/projects/mg14.html</url>
+        <categories>
+            <tag category="Design"/>
+        </categories>
+    </project>
+
+    <project status = "Finished" priority="low">
+        <title>Dactyl CC Keyboard</title>
+        <description>Custom built ergonomic keyboard with split design and thumb clusters</description>
+        <image>../images/dactyl-1.jpg</image>
+        <url>../pages/projects/dactyl.html</url>
+        <categories>
+            <tag category="Misc"/>
+        </categories>
+    </project>
+
+    <project status = "Finished" priority="low">
+        <title>Quiver Dampeners</title>
+        <description>Specially Designed Dampeners to stop arrows from rattling in a quiver tube.</description>
+        <image>../images/quiver-1.jpg</image>
+        <url>../pages/projects/quiver.html</url>
+        <categories>
+            <tag category="Misc"/>
+        </categories>
+    </project>
+
+</projects>
