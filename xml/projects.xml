@@ -126,4 +126,14 @@
         </categories>
     </project>
 
+    <project status = "Finished" priority="low">
+        <title>Dactyl CC Keyboard</title>
+        <description>Custom built ergonomic keyboard with split design and thumb clusters</description>
+        <image>../images/dactyl-1.jpg</image>
+        <url>../pages/projects/dactyl.html</url>
+        <categories>
+            <tag category="Misc"/>
+        </categories>
+    </project>
+
 </projects>
