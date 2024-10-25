@@ -105,13 +105,14 @@
         </categories>
     </project>
 
-    <project status = "Finished" priority="low">
-        <title>Dactyl CC Keyboard</title>
-        <description>Custom built ergonomic keyboard with split design and thumb clusters</description>
-        <image>../images/dactyl-1.jpg</image>
-        <url>../pages/projects/dactyl.html</url>
+    <project status = "Ongoing" priority="low">
+        <title>Modular Parts Tray</title>
+        <description>Modular trays designed to solve the problem of dust and lost screws, at a low cost when reassembling watches</description>
+        <image>../images/parttray-3.jpg</image>
+        <url>../pages/projects/partstray.html</url>
         <categories>
-            <tag category="Misc"/>
+            <tag category="Horology"/>
+            <tag category="Design" />
         </categories>
     </project>
 
