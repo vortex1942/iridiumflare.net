@@ -74,7 +74,7 @@
         </categories>
     </project>
     
-    <project status = "Finished" pinned="true" priority="high">
+    <project status = "Finished" pinned="false" priority="high">
         <title>HWLE Data Breach</title>
         <description>This is a report produced for an assignment, Covering the 2023 HWL Ebsworth data breach</description>
         <image>../images/</image>
@@ -85,7 +85,7 @@
     </project>
 
 
-    <project status = "Finished" priority="medium">
+    <project status = "Finished" priority="medium" pinned="true">
         <title>Subnetting Tutorial</title>
         <description>A brief overview of IPv4 subnetting concepts and how to manually calculate subnets</description>
         <image>../images/subnetting1.jpg</image>
