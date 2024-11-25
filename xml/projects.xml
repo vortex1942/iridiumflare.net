@@ -74,7 +74,7 @@
         </categories>
     </project>
     
-    <project status = "Finished" pinned="false" priority="high">
+    <project status = "Finished" pinned="false" priority="medium">
         <title>HWLE Data Breach</title>
         <description>This is a report produced for an assignment, Covering the 2023 HWL Ebsworth data breach</description>
         <image>../images/</image>
